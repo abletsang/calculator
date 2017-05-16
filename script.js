@@ -19,6 +19,34 @@ var equals = document.querySelector(".equals");
 var output = document.querySelector(".output");
 // var  = document.querySelector(".");
 
+equals.addEventListener("click", function() {
+	var answer = eval(output.textContent);
+	output.textContent = answer;
+});
+
+clear.addEventListener("click", function() {
+	output.textContent = "";
+});
+
+plus.addEventListener("click", function() {
+	output.textContent += "+";
+});
+
+minus.addEventListener("click", function() {
+	output.textContent += "-";
+});
+
+divide.addEventListener("click", function() {
+	output.textContent += "/";
+});
+
+// multiply.addEventListener("click", function() {
+// 	output.textContent += "*";
+// });
+
+decimal.addEventListener("click", function() {
+	output.textContent += ".";
+});
 
 one.addEventListener("click", function() {
 	output.textContent += 2;
