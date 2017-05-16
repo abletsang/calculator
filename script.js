@@ -18,3 +18,44 @@ var minus = document.querySelector(".minus");
 var equals = document.querySelector(".equals");
 var output = document.querySelector(".output");
 // var  = document.querySelector(".");
+
+
+one.addEventListener("click", function() {
+	output.textContent += 2;
+});
+
+two.addEventListener("click", function() {
+	output.textContent += 2;
+});
+
+three.addEventListener("click", function() {
+	output.textContent += 3;
+});
+
+four.addEventListener("click", function() {
+	output.textContent += 4;
+});
+
+five.addEventListener("click", function() {
+	output.textContent += 5;
+});
+
+six.addEventListener("click", function() {
+	output.textContent += 6;
+});
+
+seven.addEventListener("click", function() {
+	output.textContent += 7;
+});
+
+eight.addEventListener("click", function() {
+	output.textContent += 8;
+});
+
+nine.addEventListener("click", function() {
+	output.textContent += 9;
+});
+
+zero.addEventListener("click", function() {
+	output.textContent += 0;
+});
