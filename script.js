@@ -10,6 +10,7 @@ var nine = document.querySelector(".nine");
 var zero = document.querySelector(".zero");
 
 var clear = document.querySelector(".clear");
+var del = document.querySelector(".del");
 var decimal = document.querySelector(".decimal");
 var divide = document.querySelector(".divide");
 var multiply = document.querySelector(".multiply");
@@ -28,6 +29,11 @@ clear.addEventListener("click", function() {
 	output.textContent = "";
 });
 
+del.addEventListener("click", function() {
+	var str = output.textContent;
+	output.textContent = str.substring(0, str.length-1);
+});
+
 plus.addEventListener("click", function() {
 	output.textContent += "+";
 });
@@ -40,9 +46,9 @@ divide.addEventListener("click", function() {
 	output.textContent += "/";
 });
 
-// multiply.addEventListener("click", function() {
-// 	output.textContent += "*";
-// });
+multiply.addEventListener("click", function() {
+	output.textContent += "*";
+});
 
 decimal.addEventListener("click", function() {
 	output.textContent += ".";
