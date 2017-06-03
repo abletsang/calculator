@@ -2,17 +2,21 @@ body {
 	background: #e8d9ce;
 	text-align: center;
 	font-family: "Montserrat";
+	color: #232323;
 }
 
+h1 {
+	font-weight: 400;
+	margin-top: 50px;
+}
 
 table {
-	margin: 60px auto;
-	max-width: 600px;
+	margin: 35px auto;
+	min-width: 300px;
 }
 
 tbody {
-	max-width: 600px;
-	width: 35%;
+	min-width: 300px;
 }
 
 td {
@@ -48,10 +52,6 @@ td {
 	background-color: #d7e8de;
 }
 
-
-
 td {
 	background-color: #dddcdb;
-	color: #232323;
-
 }
